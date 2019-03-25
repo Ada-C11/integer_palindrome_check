@@ -4,7 +4,7 @@
 def is_palindrome(number)
   return false if !number || number < 0
   length = 1
-  until number / 10 ** length == 0
+  until number / (10 ** length) == 0
     length += 1
   end
   (length / 2).times do |i|
