@@ -6,7 +6,7 @@ def is_palindrome(number)
   if number && number >= 0
     while number != 0
       # calculate number of digits
-      num_digits = Math.log10(number).floor
+      num_digits = log_floor(number)
       # find first and last digit
       last_digit = number % 10
       first_digit = number / 10 ** num_digits
@@ -21,4 +21,13 @@ def is_palindrome(number)
   else
     return false
   end
+end
+
+def log_floor(number)
+  digits = 0
+  until number < 10
+    number = number / 10
+    digits += 1
+  end
+  return digits
 end
