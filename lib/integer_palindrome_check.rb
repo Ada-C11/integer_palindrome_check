@@ -30,7 +30,6 @@ def is_palindrome(number)
     # find left_digit
     (digit_count - 1 - i).times do # <-- O(n) where n is digit count
       left_digit = left_digit / 10
-      # j += 1
     end
 
     # remove digits to left of inspected
