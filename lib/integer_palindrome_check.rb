@@ -2,5 +2,11 @@
 # Time complexity: ?
 # Space complexity: ?
 def is_palindrome(number)
-  raise NotImplementedError
+  return false if  number < 0 || number == nil
+
+  return true if number > 1 && number < 10
+
 end
+
+p is_palindrome(9)
+
