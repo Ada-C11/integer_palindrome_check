@@ -20,7 +20,7 @@ end
 
 
 
-# string solution:
+# another string solution: 
 # def is_palindrome(number)
 #   return false if  number == nil || number < 0
 
