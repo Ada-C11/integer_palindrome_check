@@ -3,7 +3,6 @@
 # Space complexity: O(1)
 def is_palindrome(number)
   return false if number == nil || number < 0
-  return true if number < 10
 
   exp = 1
 
