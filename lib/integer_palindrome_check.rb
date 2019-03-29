@@ -2,8 +2,8 @@
 # Time complexity: O(n/2) = O(n), where n is the number of digits
 # Space complexity: O(1), assigned int vars takes constant amount of space each iteration, despite their value
 def is_palindrome(number)
-  return false if !number
-  return true if number > -10 && number < 10
+  return false if !number || number < 0
+  return true if number < 10
   base_ten = 1
   while number / base_ten >= 10
     base_ten *= 10
