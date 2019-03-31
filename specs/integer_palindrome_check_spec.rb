@@ -16,6 +16,7 @@ describe "integer palindrome check" do
 
     it "not a palindrome" do
       is_palindrome(1728371).must_equal false
+      is_palindrome(172371).must_equal false
     end
   end
 

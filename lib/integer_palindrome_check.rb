@@ -17,7 +17,7 @@ def is_palindrome(number)
   most_sig_num = number / divider
   least_sig_num = number % modulo
 
-  while modulo < divider
+  while modulo <= divider
     return false if most_sig_num != least_sig_num
     divider /= 10
     modulo *= 10
