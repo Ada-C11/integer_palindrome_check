@@ -3,7 +3,7 @@
 # Space complexity: ?
 def is_palindrome(number)
   return false if number >= 0 || number == nil
-  # in case of single digit
+  # in case of single digit4
   return true if number >= 0 && number < 10
   while number != 0
 
@@ -24,9 +24,10 @@ def is_palindrome(number)
 end
 
 def find_digits(number)
-  digits = 1
-  while (number / digits) >= 10
-    digits *= 10
+  digits = 0
+  until number < 10
+    number = number / 10
+    digits += 1
   end
   return digits
 end
