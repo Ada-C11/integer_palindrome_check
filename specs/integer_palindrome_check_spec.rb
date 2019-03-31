@@ -1,6 +1,8 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/integer_palindrome_check'
+gem "minitest", ">= 5.0.0"
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/pride"
+require_relative "../lib/integer_palindrome_check"
 
 describe "integer palindrome check" do
   describe "basic tests" do
