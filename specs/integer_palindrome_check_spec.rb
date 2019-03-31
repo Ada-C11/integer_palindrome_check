@@ -1,6 +1,8 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/integer_palindrome_check'
+gem "minitest", ">= 5.0.0"
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/pride"
+require_relative "../lib/integer_palindrome_check"
 
 describe "integer palindrome check" do
   describe "basic tests" do
@@ -14,6 +16,7 @@ describe "integer palindrome check" do
 
     it "not a palindrome" do
       is_palindrome(1728371).must_equal false
+      is_palindrome(172371).must_equal false
     end
   end
 
