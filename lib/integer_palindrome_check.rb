@@ -1,6 +1,6 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
 # Time complexity: linear, O(n) - where n equals the number of digits in the
-#                  input number - 1.
+#                  input number - 1 (or length of the input number - 1).
 # Space complexity: constant, O(1) - the amount of space used remains the same
 #                   regardless of input size
 def is_palindrome(number)
