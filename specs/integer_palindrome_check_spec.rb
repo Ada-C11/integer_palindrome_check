@@ -1,6 +1,8 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/integer_palindrome_check'
+require "minitest/autorun"
+require "minitest/reporters"
+require_relative "../lib/integer_palindrome_check"
+
+Minitest::Reporters.use!
 
 describe "integer palindrome check" do
   describe "basic tests" do
