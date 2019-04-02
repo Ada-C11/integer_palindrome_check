@@ -1,11 +1,11 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n^2), where n is the number of digits in the number
+# Space complexity: O(2) for 2 arrays
 def is_palindrome(number)
   reversed_number = []
 
   if (number == nil) || (number < 0)
-    puts "APPLE"
+    # puts "APPLE"
     return false
   end
 
