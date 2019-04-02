@@ -1,6 +1,8 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
 # Time complexity: O(n/2) = O(n), where n is the number of digits
 # Space complexity: O(1), assigned int vars takes constant amount of space each iteration, despite their value
+# Alternate solution (less optimal space complexity): reverse number, if reversed_num - number == 0, return true
+
 def is_palindrome(number)
   return false if !number || number < 0
   return true if number < 10
