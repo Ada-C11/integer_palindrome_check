@@ -8,7 +8,7 @@ def is_palindrome(number)
   check = 0
   r = number
 
-  if number > 0 
+ while number > 0 
     temp = number
     i = number%10 
     check = check*10 + i
