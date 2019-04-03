@@ -1,6 +1,6 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n), where n is the number of digits in the number
+# Space complexity: O(1)
 def is_palindrome(number)
   return false if number == nil || number < 0
   i = 10
