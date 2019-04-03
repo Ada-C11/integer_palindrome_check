@@ -30,8 +30,10 @@ def is_palindrome(number)
       return false
     else
       number = number / 10
-      count += 2
-      number = number / (10 ** (digit_count - count))
+      count += 1
+      number = number % (10 ** (digit_count - count))
+      count += 1
     end
   end
+  return true
 end
