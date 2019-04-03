@@ -1,5 +1,6 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
-# Time complexity: ?
+# Time complexity: O(n) where n is the number of digits in the number passed in as an argument.
+# The first loop will run the number of digits times, and the second loop will run that number of times / 2.
 # Space complexity: ?
 require "pry"
 
@@ -23,7 +24,7 @@ def is_palindrome(number)
     return true
   end
 
-  # Note to self, test the below.
+  # Math to check for palindrome.
   count = 1
   (digit_count / 2).times do
     if number % 10 != number / (10 ** (digit_count - count))
