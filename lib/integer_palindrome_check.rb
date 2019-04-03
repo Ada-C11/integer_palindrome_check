@@ -1,8 +1,7 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
 # Time complexity: O(n) where n is the number of digits in the number passed in as an argument.
 # The first loop will run the number of digits times, and the second loop will run that number of times / 2.
-# Space complexity: ?
-require "pry"
+# Space complexity: O(1) because the variables being used are consistent and no new data structure is created.
 
 def is_palindrome(number)
   if number == nil || number < 0
