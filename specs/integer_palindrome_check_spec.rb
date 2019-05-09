@@ -1,6 +1,6 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/integer_palindrome_check'
+require "minitest/autorun"
+require "minitest/reporters"
+require_relative "../lib/integer_palindrome_check"
 
 describe "integer palindrome check" do
   describe "basic tests" do
@@ -38,6 +38,10 @@ describe "integer palindrome check" do
 
     it "zero" do
       is_palindrome(0).must_equal true
+    end
+
+    it "zero digit in number" do
+      is_palindrome(1011101).must_equal true
     end
   end
 end
